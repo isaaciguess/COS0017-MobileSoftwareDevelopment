@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appName">Assignment1 - Score App</string>
+    <string name="incrementScoreButton"> Score </string>
+    <string name="decrementScoreButton"> Remove </string>
+    <string name="resetScoreButton"> Reset </string>
+</resources>

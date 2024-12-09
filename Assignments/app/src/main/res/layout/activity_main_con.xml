@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/appHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/appName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appHeader" />
+
+    <Button
+        android:id="@+id/incrementScore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/incrementScoreButton"
+        android:backgroundTint="@color/purple_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/decrementScore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/score" />
+
+    <Button
+        android:id="@+id/decrementScore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/decrementScoreButton"
+        android:backgroundTint="@color/purple_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/resetScore"
+        app:layout_constraintStart_toEndOf="@id/incrementScore"
+        app:layout_constraintTop_toBottomOf="@id/score" />
+
+    <Button
+        android:id="@+id/resetScore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/resetScoreButton"
+        android:backgroundTint="@color/purple_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/decrementScore"
+        app:layout_constraintTop_toBottomOf="@id/score" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

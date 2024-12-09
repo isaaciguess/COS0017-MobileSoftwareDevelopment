@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/appHeader"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:text="@string/appName" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="33dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/incrementScore"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/incrementScoreButton"
+            android:backgroundTint="@color/purple_200" />/>
+
+
+        <Button
+            android:id="@+id/decrementScore"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/decrementScoreButton"
+            android:backgroundTint="@color/purple_200" />/>
+
+        <Button
+            android:id="@+id/resetScore"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resetScoreButton"
+            android:backgroundTint="@color/purple_200" />/>
+
+    </LinearLayout>
+
+</LinearLayout>
